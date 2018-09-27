@@ -1,0 +1,6 @@
+items:
+  - foo: "foo"
+    bar:
+      - "some"
+      - "strings"
+      - "{{SOME_STRING}}"
