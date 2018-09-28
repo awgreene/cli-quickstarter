@@ -19,9 +19,9 @@ type config struct {
 	Items []configElement
 }
 
-func contains(sArr []string, s string) bool {
-	for _, element := range sArr {
-		if element == s {
+func contains(s []string, e string) bool {
+	for _, itr := range s {
+		if itr == e {
 			return true
 		}
 	}
