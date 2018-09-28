@@ -19,6 +19,15 @@ type config struct {
 	Items []configElement
 }
 
+func contains(sArr []string, s string) bool {
+	for _, element := range sArr {
+		if element == s {
+			return true
+		}
+	}
+	return false
+}
+
 func main() {
 	// Declare and Parse Flags
 	debugPtr := flag.Bool("debug", false, "Run with debugging enabled")
